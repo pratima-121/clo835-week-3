@@ -1,5 +1,5 @@
 name: Deploy to ECR
-# updated ECR Repo week3-1 01/26
+# updated ECR Repo week3 01/26
 on: 
   push:
     branches: [ master ]
@@ -32,8 +32,8 @@ jobs:
         ECR_REPOSITORY: clo835-week3
         IMAGE_TAG: v0.1
       run: |
-        cd Chapter02/kubia/
-        ls -ltra
+        # cd Chapter02/kubia/
+        # ls -ltra
         # Docker build command
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
         # Unit test
