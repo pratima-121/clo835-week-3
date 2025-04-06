@@ -32,7 +32,7 @@ jobs:
         ECR_REPOSITORY: clo835
         IMAGE_TAG: v0.1
       run: |
-        cd clo835-week-3/dockerfile
+        cd clo835-week-3/docker file
         ls -ltra
         # Docker build command
         docker build -t $ECR_REGISTRY/$ECR_REPOSITORY:$IMAGE_TAG .
